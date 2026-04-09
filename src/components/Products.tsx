@@ -12,6 +12,7 @@ interface ProductSectionProps {
   accentColor: string;
   description: string;
   ctaLabel: string;
+  link: string;
   cards: {
     title: string;
     description: string;

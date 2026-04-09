@@ -1,7 +1,7 @@
 import alarmImg from "@/assets/alarmdesk-preview.jpg";
 import gardenImg from "@/assets/kleingarten-preview.jpg";
 import winterImg from "@/assets/winterflow-preview.jpg";
-import { Shield, Flower2, Snowflake, Globe, Users, Bell, BarChart3, Leaf, CalendarDays, Workflow, Zap, Clock, ArrowRight } from "lucide-react";
+import { Shield, Flower2, Snowflake, Globe, Users, Bell, BarChart3, Leaf, CalendarDays, Workflow, Zap, Clock, ArrowRight, type LucideIcon } from "lucide-react";
 
 interface ProductSectionProps {
   badge: string;
@@ -14,7 +14,7 @@ interface ProductSectionProps {
   cards: {
     title: string;
     description: string;
-    icon: React.ComponentType<{ size?: number; className?: string }>;
+    icon: LucideIcon;
     image?: string;
     span?: "large" | "small";
     badgeText?: string;

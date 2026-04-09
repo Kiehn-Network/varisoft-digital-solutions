@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import alarmImg from "@/assets/alarmdesk-preview.jpg";
 import gardenImg from "@/assets/kleingarten-preview.jpg";
 import winterImg from "@/assets/winterflow-preview.jpg";
@@ -11,6 +12,7 @@ interface ProductSectionProps {
   accentColor: string;
   description: string;
   ctaLabel: string;
+  link: string;
   cards: {
     title: string;
     description: string;
@@ -21,7 +23,7 @@ interface ProductSectionProps {
   }[];
 }
 
-const ProductSection = ({ badge, badgeColor, title, titleAccent, accentColor, description, ctaLabel, cards }: ProductSectionProps) => (
+const ProductSection = ({ badge, badgeColor, title, titleAccent, accentColor, description, ctaLabel, link, cards }: ProductSectionProps) => (
   <div className="py-24">
     <div className="container mx-auto px-4">
       <div className="flex flex-col lg:flex-row gap-16 items-start">
@@ -38,8 +40,8 @@ const ProductSection = ({ badge, badgeColor, title, titleAccent, accentColor, de
           <p className="text-product-section-muted leading-relaxed text-base">
             {description}
           </p>
-          <a
-            href="#kontakt"
+          <Link
+            to={link}
             className="inline-flex items-center gap-3 mt-4 bg-product-section-card text-product-section-foreground border border-product-section-border rounded-2xl px-5 py-3.5 hover:border-product-section-muted/40 transition-colors group"
           >
             <span className="w-10 h-10 rounded-xl bg-product-section-border/60 flex items-center justify-center">
@@ -49,7 +51,7 @@ const ProductSection = ({ badge, badgeColor, title, titleAccent, accentColor, de
               <p className="text-sm font-semibold">{ctaLabel}</p>
               <p className="text-xs text-product-section-muted">Entdecke das volle Potenzial</p>
             </div>
-          </a>
+          </Link>
         </div>
 
         {/* Right bento grid */}
@@ -103,6 +105,7 @@ const Products = () => (
       accentColor="text-product-alarm"
       description="AlarmDesk ist die moderne Leitstellensoftware für Sicherheitsdienste. Alarme empfangen, verarbeiten und dokumentieren – alles in Echtzeit, alles in einer Oberfläche."
       ctaLabel="Alle Funktionen"
+      link="/alarmdesk"
       cards={[
         {
           title: "Echtzeit-Monitoring",
@@ -135,6 +138,7 @@ const Products = () => (
       accentColor="text-product-garden"
       description="KleingartenManager digitalisiert die Vereinsverwaltung: Parzellen, Mitglieder, Abrechnungen und Kommunikation – alles an einem Ort."
       ctaLabel="Mehr erfahren"
+      link="/kleingartenmanager"
       cards={[
         {
           title: "Parzellenverwaltung",
@@ -166,6 +170,7 @@ const Products = () => (
       accentColor="text-product-winter"
       description="WinterFlow automatisiert Ihre Geschäftsprozesse. Aufgaben steuern, Teams koordinieren und Workflows optimieren – mit einer Plattform, die mitdenkt."
       ctaLabel="Alle Funktionen"
+      link="/winterflow"
       cards={[
         {
           title: "Workflow-Automatisierung",

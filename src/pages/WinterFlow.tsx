@@ -5,12 +5,12 @@ import { Workflow, Zap, Clock, GitBranch, BarChart3, Settings } from "lucide-rea
 
 const WinterFlow = () => (
   <ProductDetailLayout
-    badge="Workflow-Engine"
+    badge="WinterFlow"
     badgeColor="border-product-winter/50 text-product-winter"
-    title="PROZESSE, DIE"
-    titleAccent="FLIESSEN."
+    title="Winterdienst."
+    titleAccent="Digital verwaltet."
     accentColorClass="text-product-winter"
-    subtitle="Automatisiere deine Geschäftsprozesse mit WinterFlow."
+    subtitle="Professionelle Auftragsverwaltung für Ihren Winterdienst – von der Disposition bis zur Abrechnung, alles in einer Lösung."
     description="Weniger Klicks. Mehr Ergebnisse."
     features={[
       {

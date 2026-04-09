@@ -1,12 +1,13 @@
 import heroTeam from "@/assets/hero-team.jpg";
 import { ArrowRight, Star, Sparkles, Code } from "lucide-react";
+import ScrollReveal from "./ScrollReveal";
 
 const Hero = () => (
   <section className="relative bg-background pt-28 pb-16 overflow-hidden">
     <div className="container mx-auto px-4">
       <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
         {/* Left */}
-        <div className="flex-1 space-y-6 max-w-xl">
+        <ScrollReveal className="flex-1 space-y-6 max-w-xl">
           <div className="flex gap-2">
             <span className="inline-flex items-center gap-1.5 text-xs font-semibold bg-primary/10 text-primary px-3 py-1.5 rounded-full">
               <Sparkles size={12} /> Software
@@ -40,10 +41,9 @@ const Hero = () => (
               Kontakt aufnehmen
             </a>
           </div>
-        </div>
+        </ScrollReveal>
 
-        {/* Right – image + floating cards */}
-        <div className="flex-1 relative w-full max-w-lg lg:max-w-none">
+        <ScrollReveal delay={200} className="flex-1 relative w-full max-w-lg lg:max-w-none">
           <div className="relative">
             <div className="rounded-3xl overflow-hidden shadow-2xl">
               <img
@@ -76,7 +76,7 @@ const Hero = () => (
               <p className="text-xs text-muted-foreground">Aktive Produkte</p>
             </div>
           </div>
-        </div>
+        </ScrollReveal>
       </div>
     </div>
   </section>

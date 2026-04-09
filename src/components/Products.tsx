@@ -138,6 +138,7 @@ const Products = () => (
       accentColor="text-product-garden"
       description="KleingartenManager digitalisiert die Vereinsverwaltung: Parzellen, Mitglieder, Abrechnungen und Kommunikation – alles an einem Ort."
       ctaLabel="Mehr erfahren"
+      link="/kleingartenmanager"
       cards={[
         {
           title: "Parzellenverwaltung",
@@ -169,6 +170,7 @@ const Products = () => (
       accentColor="text-product-winter"
       description="WinterFlow automatisiert Ihre Geschäftsprozesse. Aufgaben steuern, Teams koordinieren und Workflows optimieren – mit einer Plattform, die mitdenkt."
       ctaLabel="Alle Funktionen"
+      link="/winterflow"
       cards={[
         {
           title: "Workflow-Automatisierung",

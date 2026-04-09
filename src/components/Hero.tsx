@@ -77,6 +77,7 @@ const Hero = () => (
             </div>
           </div>
         </ScrollReveal>
+      </div>
     </div>
   </section>
 );

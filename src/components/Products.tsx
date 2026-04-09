@@ -61,33 +61,40 @@ const ProductSection = ({ badge, badgeColor, title, titleAccent, accentColor, de
             const Icon = card.icon;
             const isLarge = card.span === "large";
             return (
-              <div
+              <ScrollReveal
                 key={i}
-                className={`relative rounded-2xl border border-product-section-border bg-product-section-card p-6 flex flex-col justify-end overflow-hidden ${
-                  isLarge ? "sm:col-span-3 min-h-[280px]" : "sm:col-span-2 min-h-[220px]"
-                } ${i === 0 ? "sm:col-span-5 min-h-[260px]" : ""}`}
+                delay={i * 100}
+                className={`${
+                  isLarge ? "sm:col-span-3" : "sm:col-span-2"
+                } ${i === 0 ? "sm:col-span-5" : ""}`}
               >
-                {card.image && (
-                  <img
-                    src={card.image}
-                    alt=""
-                    className="absolute inset-0 w-full h-full object-cover opacity-20 rounded-2xl"
-                    loading="lazy"
-                  />
-                )}
-                {card.badgeText && (
-                  <span className="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-wider bg-product-section-border/80 text-product-section-muted px-2.5 py-1 rounded-full">
-                    {card.badgeText}
-                  </span>
-                )}
-                <div className="relative z-10">
-                  <div className="w-10 h-10 rounded-xl bg-product-section-border/60 flex items-center justify-center mb-4">
-                    <Icon size={20} className={accentColor} />
+                <div
+                  className={`relative rounded-2xl border border-product-section-border bg-product-section-card p-6 flex flex-col justify-end overflow-hidden h-full ${
+                    isLarge ? "min-h-[280px]" : "min-h-[220px]"
+                  } ${i === 0 ? "min-h-[260px]" : ""}`}
+                >
+                  {card.image && (
+                    <img
+                      src={card.image}
+                      alt=""
+                      className="absolute inset-0 w-full h-full object-cover opacity-20 rounded-2xl"
+                      loading="lazy"
+                    />
+                  )}
+                  {card.badgeText && (
+                    <span className="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-wider bg-product-section-border/80 text-product-section-muted px-2.5 py-1 rounded-full">
+                      {card.badgeText}
+                    </span>
+                  )}
+                  <div className="relative z-10">
+                    <div className="w-10 h-10 rounded-xl bg-product-section-border/60 flex items-center justify-center mb-4">
+                      <Icon size={20} className={accentColor} />
+                    </div>
+                    <h3 className="text-lg font-bold text-product-section-foreground mb-1.5">{card.title}</h3>
+                    <p className="text-sm text-product-section-muted leading-relaxed">{card.description}</p>
                   </div>
-                  <h3 className="text-lg font-bold text-product-section-foreground mb-1.5">{card.title}</h3>
-                  <p className="text-sm text-product-section-muted leading-relaxed">{card.description}</p>
                 </div>
-              </div>
+              </ScrollReveal>
             );
           })}
         </div>

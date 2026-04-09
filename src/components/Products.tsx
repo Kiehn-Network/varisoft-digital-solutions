@@ -22,7 +22,7 @@ interface ProductSectionProps {
   }[];
 }
 
-const ProductSection = ({ badge, badgeColor, title, titleAccent, accentColor, description, ctaLabel, cards }: ProductSectionProps) => (
+const ProductSection = ({ badge, badgeColor, title, titleAccent, accentColor, description, ctaLabel, link, cards }: ProductSectionProps) => (
   <div className="py-24">
     <div className="container mx-auto px-4">
       <div className="flex flex-col lg:flex-row gap-16 items-start">
@@ -39,8 +39,8 @@ const ProductSection = ({ badge, badgeColor, title, titleAccent, accentColor, de
           <p className="text-product-section-muted leading-relaxed text-base">
             {description}
           </p>
-          <a
-            href="#kontakt"
+          <Link
+            to={link}
             className="inline-flex items-center gap-3 mt-4 bg-product-section-card text-product-section-foreground border border-product-section-border rounded-2xl px-5 py-3.5 hover:border-product-section-muted/40 transition-colors group"
           >
             <span className="w-10 h-10 rounded-xl bg-product-section-border/60 flex items-center justify-center">
@@ -50,7 +50,7 @@ const ProductSection = ({ badge, badgeColor, title, titleAccent, accentColor, de
               <p className="text-sm font-semibold">{ctaLabel}</p>
               <p className="text-xs text-product-section-muted">Entdecke das volle Potenzial</p>
             </div>
-          </a>
+          </Link>
         </div>
 
         {/* Right bento grid */}

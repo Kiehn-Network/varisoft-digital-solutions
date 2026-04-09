@@ -76,7 +76,6 @@ const Hero = () => (
               <p className="text-xs text-muted-foreground">Aktive Produkte</p>
             </div>
           </div>
-        </div>
         </ScrollReveal>
     </div>
   </section>

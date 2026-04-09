@@ -32,7 +32,7 @@ const Navbar = () => {
     >
       <div className="container mx-auto flex items-center justify-between h-16 px-4">
         <Link to="/" className="flex items-center gap-2">
-          <img src={logo} alt="VariSoft" className="h-8 w-8" width={32} height={32} />
+          <img src={logo} alt="VariSoft" className="h-10 w-10" width={40} height={40} />
           <span className="text-xl font-bold tracking-tight text-foreground">
             Vari<span className="text-primary">Soft</span>.
           </span>

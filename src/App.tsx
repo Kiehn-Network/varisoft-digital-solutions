@@ -7,6 +7,8 @@ import Index from "./pages/Index.tsx";
 import AlarmDesk from "./pages/AlarmDesk.tsx";
 import KleingartenManager from "./pages/KleingartenManager.tsx";
 import WinterFlow from "./pages/WinterFlow.tsx";
+import Impressum from "./pages/Impressum.tsx";
+import Datenschutz from "./pages/Datenschutz.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
@@ -22,6 +24,8 @@ const App = () => (
           <Route path="/alarmdesk" element={<AlarmDesk />} />
           <Route path="/kleingartenmanager" element={<KleingartenManager />} />
           <Route path="/winterflow" element={<WinterFlow />} />
+          <Route path="/impressum" element={<Impressum />} />
+          <Route path="/datenschutz" element={<Datenschutz />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

@@ -9,8 +9,8 @@ const Footer = () => (
         </Link>
 
         <div className="flex gap-8 text-sm text-muted-foreground">
-          <a href="#" className="hover:text-foreground transition-colors">Impressum</a>
-          <a href="#" className="hover:text-foreground transition-colors">Datenschutz</a>
+          <Link to="/impressum" className="hover:text-foreground transition-colors">Impressum</Link>
+          <Link to="/datenschutz" className="hover:text-foreground transition-colors">Datenschutz</Link>
           <a href="mailto:info@varisoft.de" className="hover:text-foreground transition-colors">Kontakt</a>
         </div>
 

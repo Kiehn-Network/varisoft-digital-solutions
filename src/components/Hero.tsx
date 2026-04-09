@@ -13,7 +13,7 @@ const Hero = () => (
               <Sparkles size={12} /> Software
             </span>
             <span className="inline-flex items-center gap-1.5 text-xs font-semibold bg-secondary text-secondary-foreground px-3 py-1.5 rounded-full">
-              <Code size={12} /> Entwicklung
+              <Code size={12} /> Kiehn Network
             </span>
           </div>
 

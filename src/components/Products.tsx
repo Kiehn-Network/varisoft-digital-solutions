@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import alarmImg from "@/assets/alarmdesk-preview.jpg";
 import gardenImg from "@/assets/kleingarten-preview.jpg";
 import winterImg from "@/assets/winterflow-preview.jpg";

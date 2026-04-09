@@ -53,6 +53,13 @@ export default {
         "product-alarm": "hsl(var(--product-alarm))",
         "product-garden": "hsl(var(--product-garden))",
         "product-winter": "hsl(var(--product-winter))",
+        "product-section": {
+          DEFAULT: "hsl(var(--product-section))",
+          card: "hsl(var(--product-section-card))",
+          foreground: "hsl(var(--product-section-foreground))",
+          muted: "hsl(var(--product-section-muted))",
+          border: "hsl(var(--product-section-border))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",

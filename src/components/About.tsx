@@ -1,4 +1,4 @@
-import { Code2, Zap, Users } from "lucide-react";
+import { Code2, Zap, Users, ShieldCheck, Headphones, Rocket } from "lucide-react";
 
 const values = [
   {
@@ -16,30 +16,50 @@ const values = [
     title: "Partnerschaftlich",
     text: "Wir verstehen uns als Teil Ihres Teams und begleiten Sie von der Idee bis zum Go-Live.",
   },
+  {
+    icon: ShieldCheck,
+    title: "Sicher & Zuverlässig",
+    text: "Höchste Sicherheitsstandards und eine Verfügbarkeit von 99.9% für Ihre kritischen Prozesse.",
+  },
+  {
+    icon: Headphones,
+    title: "24/7 Support",
+    text: "Unser Support-Team ist rund um die Uhr für Sie erreichbar – per Telefon, E-Mail oder Chat.",
+  },
+  {
+    icon: Rocket,
+    title: "Schnelle Umsetzung",
+    text: "Von der Idee zum fertigen Produkt in Rekordzeit – agil, transparent und effizient.",
+  },
 ];
 
 const About = () => (
-  <section id="ueber-uns" className="py-24 bg-muted/50">
+  <section id="ueber-uns" className="py-24 bg-background">
     <div className="container mx-auto px-4">
-      <div className="text-center mb-16">
-        <p className="text-sm font-semibold uppercase tracking-widest text-primary mb-2">
-          Über VariSoft
-        </p>
-        <h2 className="text-3xl sm:text-4xl font-bold text-foreground max-w-2xl mx-auto">
-          Wir machen komplexe Prozesse einfach – mit Software, die begeistert
+      <div className="text-center mb-16 max-w-2xl mx-auto">
+        <span className="inline-flex items-center gap-1.5 text-xs font-semibold bg-primary/10 text-primary px-3 py-1.5 rounded-full mb-4">
+          Warum VariSoft?
+        </span>
+        <h2 className="text-3xl sm:text-4xl font-bold text-foreground">
+          Wir machen komplexe Prozesse{" "}
+          <span className="text-primary">einfach</span>
         </h2>
+        <p className="mt-4 text-muted-foreground">
+          Mit über 3 erfolgreichen Produkten und zufriedenen Kunden wissen wir,
+          worauf es ankommt.
+        </p>
       </div>
 
-      <div className="grid sm:grid-cols-3 gap-8 max-w-4xl mx-auto">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
         {values.map((v) => {
           const Icon = v.icon;
           return (
             <div
               key={v.title}
-              className="bg-card rounded-2xl p-8 shadow-[var(--card-shadow)] hover:shadow-[var(--card-shadow-hover)] transition-shadow duration-300 text-center"
+              className="bg-card rounded-2xl p-7 border border-border hover:border-primary/30 hover:shadow-lg transition-all duration-300 group"
             >
-              <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-primary/10 mb-5">
-                <Icon size={24} className="text-primary" />
+              <div className="inline-flex items-center justify-center w-11 h-11 rounded-xl bg-primary/10 group-hover:bg-primary/20 transition-colors mb-4">
+                <Icon size={22} className="text-primary" />
               </div>
               <h3 className="font-semibold text-foreground mb-2">{v.title}</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">

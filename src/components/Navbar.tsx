@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
+import logo from "@/assets/varisoft-logo.png";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -30,8 +31,11 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto flex items-center justify-between h-16 px-4">
-        <Link to="/" className="text-xl font-bold tracking-tight text-foreground">
-          Vari<span className="text-primary">Soft</span>.
+        <Link to="/" className="flex items-center gap-2">
+          <img src={logo} alt="VariSoft" className="h-8 w-8" width={32} height={32} />
+          <span className="text-xl font-bold tracking-tight text-foreground">
+            Vari<span className="text-primary">Soft</span>.
+          </span>
         </Link>
 
         <div className="hidden md:flex items-center gap-8">

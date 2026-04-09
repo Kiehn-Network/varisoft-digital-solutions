@@ -105,6 +105,7 @@ const Products = () => (
       accentColor="text-product-alarm"
       description="AlarmDesk ist die moderne Leitstellensoftware für Sicherheitsdienste. Alarme empfangen, verarbeiten und dokumentieren – alles in Echtzeit, alles in einer Oberfläche."
       ctaLabel="Alle Funktionen"
+      link="/alarmdesk"
       cards={[
         {
           title: "Echtzeit-Monitoring",

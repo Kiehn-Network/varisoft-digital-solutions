@@ -111,7 +111,7 @@ const Products = () => (
       title="Sicherheit auf"
       titleAccent="höchstem Niveau."
       accentColor="text-product-alarm"
-      description="AlarmDesk ist die moderne Leitstellensoftware für Sicherheitsdienste. Alarme empfangen, verarbeiten und dokumentieren – alles in Echtzeit, alles in einer Oberfläche."
+      description="AlarmDesk ist die moderne Einsatzsoftware für Sicherheitsdienste. Alarme  erhalten, verarbeiten und dokumentieren – alles in Echtzeit, alles in einer Oberfläche."
       ctaLabel="Alle Funktionen"
       link="/alarmdesk"
       cards={[
@@ -129,8 +129,8 @@ const Products = () => (
           span: "small",
         },
         {
-          title: "Alarm-Annahme",
-          description: "Alarme automatisch empfangen und nach Priorität klassifizieren. Lückenlose Protokollierung.",
+          title: "Modulare Funktionen",
+          description: "Individuell erweiterbar mit Modulen für Berichte, Analysen und Schnittstellen.",
           icon: Bell,
           span: "small",
           badgeText: "Kernfeature",
@@ -171,12 +171,12 @@ const Products = () => (
     />
 
     <ProductSection
-      badge="Workflow"
+      badge="WinterFlow"
       badgeColor="border-product-winter/50 text-product-winter"
-      title="Prozesse, die"
-      titleAccent="einfach fließen."
+      title="Winterdienst"
+      titleAccent="Digital erleben."
       accentColor="text-product-winter"
-      description="WinterFlow automatisiert Ihre Geschäftsprozesse. Aufgaben steuern, Teams koordinieren und Workflows optimieren – mit einer Plattform, die mitdenkt."
+      description="WinterFlow ist die innovative Softwarelösung für Winterdienstleister. Von der Einsatzplanung über die Routenoptimierung bis zur Echtzeit-Dokumentation – alles in einer benutzerfreundlichen Plattform."
       ctaLabel="Alle Funktionen"
       link="/winterflow"
       cards={[

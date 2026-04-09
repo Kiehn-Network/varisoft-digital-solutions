@@ -14,8 +14,8 @@ const WinterFlow = () => (
     description="Weniger Klicks. Mehr Ergebnisse."
     features={[
       {
-        title: "Visueller Workflow-Builder",
-        description: "Erstelle komplexe Workflows per Drag & Drop – ohne eine Zeile Code schreiben zu müssen.",
+        title: "Winterdienst, Digitalisiert",
+        description: "Erstellen Sie die perfekten Winterdienst-Workflows – von der Auftragsannahme bis zur Abrechnung, alles in einer Lösung.",
         icon: Workflow,
         image: winterPreview,
         span: "half",
@@ -35,8 +35,8 @@ const WinterFlow = () => (
         span: "third",
       },
       {
-        title: "Verzweigungen & Bedingungen",
-        description: "Erstelle intelligente Workflows mit bedingten Pfaden und automatischen Entscheidungen.",
+        title: "Fahren & Routenplanung",
+        description: "Erstelle optimale Routen für deine Fahrer und halte sie über Änderungen auf dem Laufenden.",
         icon: GitBranch,
         span: "third",
       },
@@ -47,8 +47,8 @@ const WinterFlow = () => (
         span: "third",
       },
       {
-        title: "Integrationen",
-        description: "Verbinde WinterFlow mit deinen bestehenden Tools – E-Mail, Kalender, CRM und mehr.",
+        title: "Live-Karte & Tracking",
+        description: "Behalte den Überblick über alle laufenden Aufträge mit unserer interaktiven Karte.",
         icon: Settings,
         span: "full",
       },

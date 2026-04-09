@@ -7,15 +7,15 @@ const AlarmDesk = () => (
   <ProductDetailLayout
     badge="Flaggschiff-Produkt"
     badgeColor="border-product-alarm/50 text-product-alarm"
-    title="UNLIMITED"
-    titleAccent="CONTROL."
+    title="Alarm"
+    titleAccent="Desk."
     accentColorClass="text-product-alarm"
-    subtitle="Erlebe die nächste Generation der Leitstellensoftware."
-    description="Keine Grenzen. Keine Kompromisse."
+    subtitle="Erlebe die nächste Generation der Einsatzverwaltung."
+    description="AlarmDesk bündelt Leitstelle, Einsätze und Dokumentation in einer Oberfläche."
     features={[
       {
-        title: "Realistische Einsatzplanung",
-        description: "Baue deine Wachleitstelle auf, setze Prioritäten und koordiniere Einsätze in Echtzeit mit vollständiger Protokollierung.",
+        title: "Digitales Einsatzmanagement",
+        description: "Digitalisiere deine Leitstelle mit AlarmDesk – von der Einsatzannahme über die Ressourcenverwaltung bis zur Einsatzdokumentation, alles in einer Lösung.",
         icon: Globe,
         image: alarmPreview,
         span: "half",
@@ -29,8 +29,8 @@ const AlarmDesk = () => (
         accentBorder: "bg-product-alarm/20 text-product-alarm",
       },
       {
-        title: "Fahrzeug-Management",
-        description: "Verwalte deinen Fuhrpark, weise Fahrzeuge zu und tracke Standorte und Verfügbarkeit.",
+        title: "Modular aufgebaut",
+        description: "Wähle die Module, die du brauchst – von der Einsatzplanung über die Ressourcenverwaltung bis zum Berichtswesen.",
         icon: Shield,
         span: "third",
       },
@@ -41,8 +41,8 @@ const AlarmDesk = () => (
         span: "third",
       },
       {
-        title: "Alarm-Protokollierung",
-        description: "Lückenlose Dokumentation aller Alarme, Maßnahmen und Ergebnisse für maximale Transparenz.",
+        title: "Einsatz-Protokollierung",
+        description: "Lückenlose Dokumentation aller Einsätze, Maßnahmen und Ergebnisse für maximale Transparenz.",
         icon: Bell,
         span: "third",
       },

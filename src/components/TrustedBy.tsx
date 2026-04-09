@@ -33,8 +33,8 @@ const TrustedBy = () => (
             </Link>
           );
         })}
-      </div>
       </ScrollReveal>
+    </div>
   </section>
 );
 

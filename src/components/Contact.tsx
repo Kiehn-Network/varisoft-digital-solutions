@@ -1,10 +1,11 @@
 import { Mail, ArrowRight, MapPin, Phone } from "lucide-react";
+import ScrollReveal from "./ScrollReveal";
 
 const Contact = () => (
   <section id="kontakt" className="py-24 bg-muted/30">
     <div className="container mx-auto px-4">
       <div className="max-w-4xl mx-auto">
-        <div className="text-center mb-12">
+        <ScrollReveal className="text-center mb-12">
           <span className="inline-flex items-center gap-1.5 text-xs font-semibold bg-primary/10 text-primary px-3 py-1.5 rounded-full mb-4">
             Kontakt
           </span>
@@ -15,9 +16,9 @@ const Contact = () => (
             Sie haben eine Idee oder suchen eine Softwarelösung? Wir freuen uns auf
             Ihre Nachricht und melden uns zeitnah bei Ihnen.
           </p>
-        </div>
+        </ScrollReveal>
 
-        <div className="grid sm:grid-cols-3 gap-6">
+        <ScrollReveal delay={150} className="grid sm:grid-cols-3 gap-6">
           <a
             href="mailto:info@varisoft.de"
             className="bg-card rounded-2xl border border-border p-6 text-center hover:border-primary/30 hover:shadow-lg transition-all duration-300 group"
@@ -44,7 +45,7 @@ const Contact = () => (
             <h3 className="font-semibold text-foreground mb-1">Standort</h3>
             <p className="text-sm text-muted-foreground">Deutschland</p>
           </div>
-        </div>
+        </ScrollReveal>
 
         <div className="text-center mt-10">
           <a

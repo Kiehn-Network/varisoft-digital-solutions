@@ -3,6 +3,7 @@ import alarmImg from "@/assets/alarmdesk-preview.jpg";
 import gardenImg from "@/assets/kleingarten-preview.jpg";
 import winterImg from "@/assets/winterflow-preview.jpg";
 import { Shield, Flower2, Snowflake, Globe, Users, Bell, BarChart3, Leaf, CalendarDays, Workflow, Zap, Clock, ArrowRight, type LucideIcon } from "lucide-react";
+import ScrollReveal from "./ScrollReveal";
 
 interface ProductSectionProps {
   badge: string;
@@ -28,7 +29,7 @@ const ProductSection = ({ badge, badgeColor, title, titleAccent, accentColor, de
     <div className="container mx-auto px-4">
       <div className="flex flex-col lg:flex-row gap-16 items-start">
         {/* Left text */}
-        <div className="lg:w-[38%] lg:sticky lg:top-32 space-y-6">
+        <ScrollReveal className="lg:w-[38%] lg:sticky lg:top-32 space-y-6">
           <span className={`inline-block text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full border ${badgeColor}`}>
             {badge}
           </span>
@@ -52,7 +53,7 @@ const ProductSection = ({ badge, badgeColor, title, titleAccent, accentColor, de
               <p className="text-xs text-product-section-muted">Entdecke das volle Potenzial</p>
             </div>
           </Link>
-        </div>
+        </ScrollReveal>
 
         {/* Right bento grid */}
         <div className="lg:w-[62%] grid grid-cols-1 sm:grid-cols-5 gap-4">

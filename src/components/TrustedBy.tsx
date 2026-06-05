@@ -23,9 +23,9 @@ const TrustedBy = () => (
             <Link
               key={c.name}
               to={c.link}
-              className="flex items-center gap-3 group"
+              className="flex items-center gap-3 group hover:-translate-y-0.5 transition-transform duration-300"
             >
-              <Icon size={24} className={`${c.color} opacity-60 group-hover:opacity-100 transition-opacity`} />
+              <Icon size={24} className={`${c.color} opacity-60 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300`} />
               <div>
                 <p className="text-sm font-semibold text-foreground/70 group-hover:text-foreground transition-colors">{c.name}</p>
                 <p className="text-xs text-muted-foreground">{c.desc}</p>

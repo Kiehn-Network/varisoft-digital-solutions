@@ -55,9 +55,9 @@ const About = () => (
         {values.map((v, i) => {
           const Icon = v.icon;
           return (
-            <ScrollReveal key={v.title} delay={i * 100}>
-              <div className="bg-card rounded-2xl p-7 border border-border hover:border-primary/30 hover:shadow-lg transition-all duration-300 group h-full">
-                <div className="inline-flex items-center justify-center w-11 h-11 rounded-xl bg-primary/10 group-hover:bg-primary/20 transition-colors mb-4">
+            <ScrollReveal key={v.title} delay={i * 80}>
+              <div className="bg-card rounded-2xl p-7 border border-border hover:border-primary/30 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group h-full">
+                <div className="inline-flex items-center justify-center w-11 h-11 rounded-xl bg-primary/10 group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-300 mb-4">
                   <Icon size={22} className="text-primary" />
                 </div>
                 <h3 className="font-semibold text-foreground mb-2">{v.title}</h3>

@@ -43,10 +43,10 @@ const ProductSection = ({ badge, badgeColor, title, titleAccent, accentColor, de
           </p>
           <Link
             to={link}
-            className="inline-flex items-center gap-3 mt-4 bg-product-section-card text-product-section-foreground border border-product-section-border rounded-2xl px-5 py-3.5 hover:border-product-section-muted/40 transition-colors group"
+            className="inline-flex items-center gap-3 mt-4 bg-product-section-card text-product-section-foreground border border-product-section-border rounded-2xl px-5 py-3.5 hover:border-product-section-muted/60 hover:-translate-y-0.5 transition-all duration-300 group"
           >
-            <span className="w-10 h-10 rounded-xl bg-product-section-border/60 flex items-center justify-center">
-              <ArrowRight size={18} className="text-product-section-muted group-hover:text-product-section-foreground transition-colors" />
+            <span className="w-10 h-10 rounded-xl bg-product-section-border/60 flex items-center justify-center group-hover:bg-product-section-border transition-colors">
+              <ArrowRight size={18} className="text-product-section-muted group-hover:text-product-section-foreground arrow-cta" />
             </span>
             <div>
               <p className="text-sm font-semibold">{ctaLabel}</p>
@@ -69,17 +69,20 @@ const ProductSection = ({ badge, badgeColor, title, titleAccent, accentColor, de
                 } ${i === 0 ? "sm:col-span-5" : ""}`}
               >
                 <div
-                  className={`relative rounded-2xl border border-product-section-border bg-product-section-card p-6 flex flex-col justify-end overflow-hidden h-full ${
+                  className={`relative rounded-2xl border border-product-section-border bg-product-section-card p-6 flex flex-col justify-end overflow-hidden h-full group transition-all duration-300 hover:border-product-section-muted/40 hover:-translate-y-1 hover:shadow-2xl ${
                     isLarge ? "min-h-[280px]" : "min-h-[220px]"
                   } ${i === 0 ? "min-h-[260px]" : ""}`}
                 >
                   {card.image && (
-                    <img
-                      src={card.image}
-                      alt=""
-                      className="absolute inset-0 w-full h-full object-cover opacity-20 rounded-2xl"
-                      loading="lazy"
-                    />
+                    <>
+                      <img
+                        src={card.image}
+                        alt=""
+                        className="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:opacity-30 group-hover:scale-105 transition-all duration-500 rounded-2xl"
+                        loading="lazy"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-product-section-card via-product-section-card/70 to-transparent rounded-2xl" />
+                    </>
                   )}
                   {card.badgeText && (
                     <span className="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-wider bg-product-section-border/80 text-product-section-muted px-2.5 py-1 rounded-full">
@@ -87,7 +90,7 @@ const ProductSection = ({ badge, badgeColor, title, titleAccent, accentColor, de
                     </span>
                   )}
                   <div className="relative z-10">
-                    <div className="w-10 h-10 rounded-xl bg-product-section-border/60 flex items-center justify-center mb-4">
+                    <div className="w-10 h-10 rounded-xl bg-product-section-border/60 group-hover:bg-product-section-border flex items-center justify-center mb-4 transition-colors">
                       <Icon size={20} className={accentColor} />
                     </div>
                     <h3 className="text-lg font-bold text-product-section-foreground mb-1.5">{card.title}</h3>

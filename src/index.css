@@ -82,6 +82,32 @@
     background: var(--hero-gradient);
   }
 
+  .hover-lift {
+    @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-xl;
+  }
+
+  .gradient-mesh {
+    background-image:
+      radial-gradient(at 20% 10%, hsl(var(--primary) / 0.08) 0px, transparent 50%),
+      radial-gradient(at 80% 0%, hsl(var(--primary) / 0.05) 0px, transparent 50%),
+      radial-gradient(at 0% 100%, hsl(var(--primary) / 0.06) 0px, transparent 50%);
+  }
+
+  .gradient-mesh-dark {
+    background-image:
+      radial-gradient(at 15% 20%, hsl(var(--primary) / 0.18) 0px, transparent 50%),
+      radial-gradient(at 85% 10%, hsl(var(--product-alarm) / 0.10) 0px, transparent 50%),
+      radial-gradient(at 50% 100%, hsl(var(--product-winter) / 0.10) 0px, transparent 50%);
+  }
+
+  .glow-primary {
+    box-shadow: 0 10px 40px -10px hsl(var(--primary) / 0.5);
+  }
+
+  .arrow-cta {
+    @apply transition-transform duration-300 group-hover:translate-x-1;
+  }
+
   .animate-fade-up {
     animation: fadeUp 0.7s ease-out forwards;
     opacity: 0;
@@ -96,6 +122,10 @@
     animation: fadeUp 0.7s ease-out 0.3s forwards;
     opacity: 0;
   }
+
+  .animate-blob {
+    animation: blob 12s ease-in-out infinite;
+  }
 }
 
 @keyframes fadeUp {
@@ -107,4 +137,10 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+@keyframes blob {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(30px, -20px) scale(1.1); }
+  66% { transform: translate(-20px, 20px) scale(0.95); }
 }

@@ -16,8 +16,8 @@ import {
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
-import alarmPreview from "@/assets/alarmdesk-preview.jpg";
-import alarm3d from "@/assets/alarmdesk-3d.jpg";
+import dashboardAsset from "@/assets/alarmdesk-dashboard.png.asset.json";
+import fahrerAsset from "@/assets/alarmdesk-fahrer.png.asset.json";
 
 const stats = [
   { value: "3", label: "Lizenzpakete" },
@@ -210,8 +210,8 @@ const AlarmDesk = () => (
 
           <div className="grid md:grid-cols-2 gap-4">
             {[
-              { img: alarmPreview, icon: Monitor, title: "Disponenten-Dashboard", desc: "Einsätze erstellen, überwachen und verwalten" },
-              { img: alarm3d, icon: Map, title: "Fahrer-Ansicht", desc: "Karte, aktive Einsätze und Dokumente für unterwegs" },
+              { img: dashboardAsset.url, icon: Monitor, title: "Disponenten-Dashboard", desc: "Einsätze erstellen, überwachen und verwalten" },
+              { img: fahrerAsset.url, icon: Map, title: "Fahrer-Ansicht", desc: "Karte, aktive Einsätze und Dokumente für unterwegs" },
             ].map((v, i) => {
               const Icon = v.icon;
               return (
